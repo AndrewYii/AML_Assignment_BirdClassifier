@@ -1,0 +1,44 @@
+exp_id: cv5_final_f1
+description: '5-fold CV, fold 1: the final recipe trained on the other 4 folds of
+  the training set and validated on fold 1 (test set untouched)'
+seed: 42
+save_ckpt: true
+data:
+  train_txt: dataset/cv5/fold1_train.txt
+  test_txt: dataset/cv5/fold1_val.txt
+  train_dir: dataset/Train
+  test_dir: dataset/Train
+  img_size: 384
+  crop_pct: 0.875
+  aug: basic
+  subset: null
+  num_workers: 3
+model:
+  name: convnext_base.fb_in22k_ft_in1k_384
+  pretrained: true
+  num_classes: 200
+  dropout: 0.0
+  drop_path: 0.0
+  pooling: avg
+  grad_ckpt: true
+train:
+  epochs: 30
+  warmup_epochs: 3
+  batch_size: 8
+  accum_steps: 2
+  eval_batch_size: 16
+  optimizer: adamw
+  strategy: full
+  lr: 5.0e-05
+  head_lr: 0.0005
+  weight_decay: 0.05
+  momentum: 0.9
+  label_smoothing: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  min_lr_ratio: 0.01
+  amp: true
+  clip_grad: null
+  eval_every: 1
+  ema_decay: 0.999
+git: a20158c

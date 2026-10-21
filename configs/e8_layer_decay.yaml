@@ -1,0 +1,6 @@
+base: e5_batch16.yaml
+exp_id: e8_layer_decay
+description: "Fine-tune strategy - layer-wise LR decay 0.85 over 19 layer groups: head 5e-4 down to ~2e-5 at the stem (early generic features move least)"
+train:
+  strategy: layer_decay
+  layer_decay: 0.85

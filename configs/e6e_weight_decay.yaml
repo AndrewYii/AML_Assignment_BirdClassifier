@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e6e_weight_decay
+description: "Regularisation (alone) - stronger decoupled weight decay 0.05 -> 0.2"
+train:
+  weight_decay: 0.2

@@ -1,0 +1,8 @@
+base: e3_convnext_tiny.yaml
+exp_id: e5_batch64
+description: "Batch-size study - batch 64 (32 x 2 grad-accum to fit 8 GB; identical maths for LayerNorm models), LR scaled linearly (x2)"
+train:
+  batch_size: 32
+  accum_steps: 2
+  lr: 2.0e-4
+  head_lr: 2.0e-3

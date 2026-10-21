@@ -1,0 +1,43 @@
+exp_id: cv5_baseline_f3
+description: '5-fold CV, fold 3: the baseline recipe trained on the other 4 folds
+  of the training set and validated on fold 3 (test set untouched)'
+seed: 42
+save_ckpt: false
+data:
+  train_txt: dataset/cv5/fold3_train.txt
+  test_txt: dataset/cv5/fold3_val.txt
+  train_dir: dataset/Train
+  test_dir: dataset/Train
+  img_size: 224
+  crop_pct: 0.875
+  aug: basic
+  subset: null
+  num_workers: 4
+model:
+  name: resnet50.tv2_in1k
+  pretrained: true
+  num_classes: 200
+  dropout: 0.0
+  drop_path: 0.0
+  pooling: avg
+  grad_ckpt: false
+train:
+  epochs: 30
+  warmup_epochs: 3
+  batch_size: 32
+  accum_steps: 1
+  eval_batch_size: 64
+  optimizer: adamw
+  strategy: full
+  lr: 0.0001
+  head_lr: 0.001
+  weight_decay: 0.05
+  momentum: 0.9
+  label_smoothing: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  min_lr_ratio: 0.01
+  amp: true
+  clip_grad: null
+  eval_every: 1
+git: a20158c

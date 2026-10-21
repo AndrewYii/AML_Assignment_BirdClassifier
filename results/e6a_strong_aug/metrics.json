@@ -1,0 +1,23 @@
+{
+  "top1": 0.8704318936877077,
+  "mean_class_acc": 0.8676309523809523,
+  "top5": 0.9717607973421927,
+  "macro_precision": 0.8826358225108225,
+  "macro_recall": 0.8676309523809523,
+  "macro_f1": 0.8652053298009181,
+  "weighted_f1": 0.8680973215979078,
+  "n_test": 1204,
+  "exp_id": "e6a_strong_aug",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 20.281600952148438,
+  "train_time_min": 16.55923611720403,
+  "epochs": 30,
+  "final_train_acc": 0.9778422033547318,
+  "final_train_loss": 0.11242707726945046,
+  "final_test_loss": 0.47536253929138184,
+  "train_test_gap": 0.10741030966702414,
+  "description": "Regularisation (alone) - stronger augmentation: + RandAugment(2 ops, magnitude 9) + RandomErasing(p=0.25)"
+}

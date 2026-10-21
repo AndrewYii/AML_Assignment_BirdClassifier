@@ -1,0 +1,23 @@
+{
+  "top1": 0.8812292358803987,
+  "mean_class_acc": 0.879672619047619,
+  "top5": 0.967607973421927,
+  "macro_precision": 0.8929424603174603,
+  "macro_recall": 0.879672619047619,
+  "macro_f1": 0.8780690032361861,
+  "weighted_f1": 0.8797359680777185,
+  "n_test": 1204,
+  "exp_id": "e5_batch16",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 21.213078498840332,
+  "train_time_min": 16.49645750919978,
+  "epochs": 30,
+  "final_train_acc": 0.9935804514392214,
+  "final_train_loss": 0.03196128828462223,
+  "final_test_loss": 0.49846139550209045,
+  "train_test_gap": 0.11235121555882266,
+  "description": "Batch-size study - batch 16, LR scaled linearly (x0.5)"
+}

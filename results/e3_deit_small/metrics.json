@@ -1,0 +1,23 @@
+{
+  "top1": 0.8355481727574751,
+  "mean_class_acc": 0.8315119047619046,
+  "top5": 0.9551495016611296,
+  "macro_precision": 0.8475027056277057,
+  "macro_recall": 0.8315119047619046,
+  "macro_f1": 0.8278309524582744,
+  "weighted_f1": 0.8324551953320352,
+  "n_test": 1204,
+  "exp_id": "e3_deit_small",
+  "model": "deit_small_patch16_224.fb_in1k",
+  "img_size": 224,
+  "params_m": 21.742664,
+  "gflops": 4.598575104,
+  "latency_ms": 25.269460678100586,
+  "train_time_min": 11.775138131777446,
+  "epochs": 30,
+  "final_train_acc": 0.9950300269206875,
+  "final_train_loss": 0.025888864831375234,
+  "final_test_loss": 0.6657265424728394,
+  "train_test_gap": 0.15948185416321248,
+  "description": "Fair comparison - DeiT-Small ViT (IN-1k, 22M) with the exact baseline recipe"
+}

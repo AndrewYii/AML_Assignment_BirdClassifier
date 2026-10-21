@@ -1,0 +1,67 @@
+{
+  "fold1": {
+    "label": "ConvNeXt-B, CV fold 1",
+    "file": "weights/fold1.pt",
+    "run": "cv5_final_f1",
+    "backbone": "convnext_base.fb_in22k_ft_in1k_384",
+    "img_size": 384,
+    "top1": 0.9296066252587992,
+    "mean_class_acc": 0.9289166666666668,
+    "top5": 0.9917184265010351,
+    "macro_f1": 0.9284196081696082,
+    "params_m": 87.771464,
+    "metrics_note": "top1 / mean_class_acc / top5 / macro_f1 of this member are on its held-out CV validation fold; the ensemble of all five scores 94.93% top-1 / 94.88% per-class on the test set"
+  },
+  "fold2": {
+    "label": "ConvNeXt-B, CV fold 2",
+    "file": "weights/fold2.pt",
+    "run": "cv5_final_f2",
+    "backbone": "convnext_base.fb_in22k_ft_in1k_384",
+    "img_size": 384,
+    "top1": 0.9399585921325052,
+    "mean_class_acc": 0.9398333333333333,
+    "top5": 0.9937888198757764,
+    "macro_f1": 0.9380606338106339,
+    "params_m": 87.771464,
+    "metrics_note": "top1 / mean_class_acc / top5 / macro_f1 of this member are on its held-out CV validation fold; the ensemble of all five scores 94.93% top-1 / 94.88% per-class on the test set"
+  },
+  "fold3": {
+    "label": "ConvNeXt-B, CV fold 3",
+    "file": "weights/fold3.pt",
+    "run": "cv5_final_f3",
+    "backbone": "convnext_base.fb_in22k_ft_in1k_384",
+    "img_size": 384,
+    "top1": 0.9389233954451346,
+    "mean_class_acc": 0.9370833333333334,
+    "top5": 0.994824016563147,
+    "macro_f1": 0.9360976245976247,
+    "params_m": 87.771464,
+    "metrics_note": "top1 / mean_class_acc / top5 / macro_f1 of this member are on its held-out CV validation fold; the ensemble of all five scores 94.93% top-1 / 94.88% per-class on the test set"
+  },
+  "fold4": {
+    "label": "ConvNeXt-B, CV fold 4",
+    "file": "weights/fold4.pt",
+    "run": "cv5_final_f4",
+    "backbone": "convnext_base.fb_in22k_ft_in1k_384",
+    "img_size": 384,
+    "top1": 0.9358178053830227,
+    "mean_class_acc": 0.9362023809523811,
+    "top5": 0.989648033126294,
+    "macro_f1": 0.9359611499611499,
+    "params_m": 87.771464,
+    "metrics_note": "top1 / mean_class_acc / top5 / macro_f1 of this member are on its held-out CV validation fold; the ensemble of all five scores 94.93% top-1 / 94.88% per-class on the test set"
+  },
+  "fold5": {
+    "label": "ConvNeXt-B, CV fold 5",
+    "file": "weights/fold5.pt",
+    "run": "cv5_final_f5",
+    "backbone": "convnext_base.fb_in22k_ft_in1k_384",
+    "img_size": 384,
+    "top1": 0.9357512953367876,
+    "mean_class_acc": 0.935,
+    "top5": 0.9906735751295337,
+    "macro_f1": 0.9341335886335886,
+    "params_m": 87.771464,
+    "metrics_note": "top1 / mean_class_acc / top5 / macro_f1 of this member are on its held-out CV validation fold; the ensemble of all five scores 94.93% top-1 / 94.88% per-class on the test set"
+  }
+}

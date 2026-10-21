@@ -1,0 +1,12 @@
+base: e5_batch16.yaml
+exp_id: e10_res384
+description: "Resolution study - 384 px input (same ConvNeXt-T IN-1k weights); batch 16 = 8 x 2 grad-accum to fit 8 GB"
+data:
+  num_workers: 3
+  img_size: 384
+train:
+  batch_size: 8
+  accum_steps: 2
+  eval_batch_size: 32
+
+# big models are GPU-bound; fewer loader processes saves RAM (16 GB machine)

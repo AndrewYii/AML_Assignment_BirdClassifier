@@ -1,0 +1,8 @@
+base: ../e2_baseline_resnet50.yaml
+exp_id: cv5_baseline_f5
+description: "5-fold CV, fold 5: the baseline recipe trained on the other 4 folds of the training set and validated on fold 5 (test set untouched)"
+save_ckpt: false
+data:
+  train_txt: dataset/cv5/fold5_train.txt
+  test_txt: dataset/cv5/fold5_val.txt
+  test_dir: dataset/Train

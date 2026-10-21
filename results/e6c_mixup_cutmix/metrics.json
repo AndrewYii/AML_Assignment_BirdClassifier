@@ -1,0 +1,23 @@
+{
+  "top1": 0.8696013289036545,
+  "mean_class_acc": 0.8673214285714286,
+  "top5": 0.9709302325581395,
+  "macro_precision": 0.8818849206349206,
+  "macro_recall": 0.8673214285714286,
+  "macro_f1": 0.8645243997488581,
+  "weighted_f1": 0.8676628391240032,
+  "n_test": 1204,
+  "exp_id": "e6c_mixup_cutmix",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": null,
+  "train_time_min": 16.456242231527963,
+  "epochs": 30,
+  "final_train_acc": 0.7786544850498339,
+  "final_train_loss": 0.7602520023048717,
+  "final_test_loss": 0.5117132067680359,
+  "train_test_gap": -0.09094684385382057,
+  "description": "Regularisation (alone) - MixUp(alpha 0.8) / CutMix(alpha 1.0), applied to 50% of batches"
+}

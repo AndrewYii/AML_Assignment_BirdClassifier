@@ -1,0 +1,42 @@
+exp_id: e11b_convnext_base_22k_384_lowlr
+description: 'Control - ImageNet-22k ConvNeXt-B 384 with a 5x lower backbone LR (1e-5): does a lower LR help the big model?'
+seed: 42
+save_ckpt: true
+data:
+  train_txt: dataset/train.txt
+  test_txt: dataset/test.txt
+  train_dir: dataset/Train
+  test_dir: dataset/Test
+  img_size: 384
+  crop_pct: 0.875
+  aug: basic
+  subset: null
+  num_workers: 3
+model:
+  name: convnext_base.fb_in22k_ft_in1k_384
+  pretrained: true
+  num_classes: 200
+  dropout: 0.0
+  drop_path: 0.0
+  pooling: avg
+  grad_ckpt: true
+train:
+  epochs: 30
+  warmup_epochs: 3
+  batch_size: 8
+  accum_steps: 2
+  eval_batch_size: 16
+  optimizer: adamw
+  strategy: full
+  lr: 1.0e-05
+  head_lr: 0.0005
+  weight_decay: 0.05
+  momentum: 0.9
+  label_smoothing: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  min_lr_ratio: 0.01
+  amp: true
+  clip_grad: null
+  eval_every: 1
+git: 6309c18

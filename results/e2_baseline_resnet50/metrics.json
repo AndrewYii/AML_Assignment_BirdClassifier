@@ -1,0 +1,23 @@
+{
+  "top1": 0.8205980066445183,
+  "mean_class_acc": 0.8190059523809523,
+  "top5": 0.9526578073089701,
+  "macro_precision": 0.8408515512265512,
+  "macro_recall": 0.8190059523809523,
+  "macro_f1": 0.815576501242136,
+  "weighted_f1": 0.8176675352616873,
+  "n_test": 1204,
+  "exp_id": "e2_baseline_resnet50",
+  "model": "resnet50.tv2_in1k",
+  "img_size": 224,
+  "params_m": 23.917832,
+  "gflops": 4.087545856,
+  "latency_ms": 23.613715171813965,
+  "train_time_min": 12.909670515855153,
+  "epochs": 30,
+  "final_train_acc": 0.9935804514392214,
+  "final_train_loss": 0.023947919888975787,
+  "final_test_loss": 0.7414103746414185,
+  "train_test_gap": 0.17298244479470304,
+  "description": "Baseline - ResNet-50 (ImageNet-1k), 224px, basic augmentation, plain CE, single-stage fine-tuning"
+}

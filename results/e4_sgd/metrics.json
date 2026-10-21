@@ -1,0 +1,23 @@
+{
+  "top1": 0.8305647840531561,
+  "mean_class_acc": 0.8275595238095238,
+  "top5": 0.9518272425249169,
+  "macro_precision": 0.8397342796092796,
+  "macro_recall": 0.8275595238095238,
+  "macro_f1": 0.821668401043401,
+  "weighted_f1": 0.8251867927471308,
+  "n_test": 1204,
+  "exp_id": "e4_sgd",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 29.376518726348877,
+  "train_time_min": 13.852214821179707,
+  "epochs": 30,
+  "final_train_acc": 0.9948229447090495,
+  "final_train_loss": 0.02456160877837259,
+  "final_test_loss": 0.6626656651496887,
+  "train_test_gap": 0.16425816065589338,
+  "description": "Optimizer study - SGD+Nesterov momentum 0.9 at its standard fine-tuning LR (backbone 1e-2, head 1e-1), L2 wd 1e-4"
+}

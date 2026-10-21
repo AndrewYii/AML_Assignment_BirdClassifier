@@ -1,0 +1,9 @@
+species,test_imgs,train_imgs,test_acc,clean_train_acc,baseline_test_acc,confused_with,true_in_top5,wrong_conf_mean
+Common Tern,7,26,42.9,100.0,14.3,Artic Tern x2; Forsters Tern x1,3/4,81.0
+Acadian Flycatcher,7,29,57.1,100.0,100.0,Least Flycatcher x3,3/3,42.0
+American Crow,5,22,60.0,100.0,20.0,Fish Crow x2,2/2,69.0
+Ring billed Gull,5,21,60.0,100.0,80.0,Herring Gull x2,2/2,54.0
+California Gull,5,19,60.0,100.0,60.0,Ring billed Gull x2,2/2,74.0
+Fish Crow,6,25,66.7,100.0,50.0,American Crow x2,2/2,45.0
+Olive sided Flycatcher,6,25,66.7,100.0,66.7,Western Wood Pewee x2,2/2,74.0
+Yellow bellied Flycatcher,7,26,71.4,100.0,57.1,Myrtle Warbler x1; Great Crested Flycatcher x1,0/2,99.0

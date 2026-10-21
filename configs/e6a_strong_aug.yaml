@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e6a_strong_aug
+description: "Regularisation (alone) - stronger augmentation: + RandAugment(2 ops, magnitude 9) + RandomErasing(p=0.25)"
+data:
+  aug: strong

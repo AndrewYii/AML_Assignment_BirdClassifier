@@ -1,0 +1,23 @@
+{
+  "top1": 0.8646179401993356,
+  "mean_class_acc": 0.8616071428571428,
+  "top5": 0.9692691029900332,
+  "macro_precision": 0.878161075036075,
+  "macro_recall": 0.8616071428571428,
+  "macro_f1": 0.8592842673322549,
+  "weighted_f1": 0.8617361970623286,
+  "n_test": 1204,
+  "exp_id": "e5_batch64",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 17.851662635803223,
+  "train_time_min": 11.675360123316446,
+  "epochs": 30,
+  "final_train_acc": 0.9968937668254297,
+  "final_train_loss": 0.017612721686914707,
+  "final_test_loss": 0.5147302150726318,
+  "train_test_gap": 0.13227582662609416,
+  "description": "Batch-size study - batch 64 (32 x 2 grad-accum to fit 8 GB; identical maths for LayerNorm models), LR scaled linearly (x2)"
+}

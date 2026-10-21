@@ -1,0 +1,23 @@
+{
+  "top1": 0.8629568106312292,
+  "mean_class_acc": 0.8595297619047619,
+  "top5": 0.9642857142857143,
+  "macro_precision": 0.8745983044733044,
+  "macro_recall": 0.8595297619047619,
+  "macro_f1": 0.8579089040044923,
+  "weighted_f1": 0.8612632618776354,
+  "n_test": 1204,
+  "exp_id": "e7_pool_min",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 20.54917812347412,
+  "train_time_min": 17.169052533308665,
+  "epochs": 30,
+  "final_train_acc": 0.9894388072064609,
+  "final_train_loss": 0.054790449769792166,
+  "final_test_loss": 0.5309659838676453,
+  "train_test_gap": 0.12648199657523174,
+  "description": "Head pooling study - global min pooling instead of global average pooling (ConvNeXt-T)"
+}

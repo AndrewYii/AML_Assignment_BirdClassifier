@@ -1,0 +1,23 @@
+{
+  "top1": 0.8803986710963455,
+  "mean_class_acc": 0.878220238095238,
+  "top5": 0.967607973421927,
+  "macro_precision": 0.8907281746031747,
+  "macro_recall": 0.878220238095238,
+  "macro_f1": 0.8771465776225839,
+  "weighted_f1": 0.8792233130238284,
+  "n_test": 1204,
+  "exp_id": "e6e_weight_decay",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 22.840702533721924,
+  "train_time_min": 20.225590511163077,
+  "epochs": 30,
+  "final_train_acc": 0.9931662870159453,
+  "final_train_loss": 0.037353430997112025,
+  "final_test_loss": 0.4995053708553314,
+  "train_test_gap": 0.11276761591959983,
+  "description": "Regularisation (alone) - stronger decoupled weight decay 0.05 -> 0.2"
+}

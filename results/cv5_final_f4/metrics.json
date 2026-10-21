@@ -1,0 +1,23 @@
+{
+  "top1": 0.9358178053830227,
+  "mean_class_acc": 0.9362023809523811,
+  "top5": 0.989648033126294,
+  "macro_precision": 0.945577380952381,
+  "macro_recall": 0.9362023809523811,
+  "macro_f1": 0.9359611499611499,
+  "weighted_f1": 0.9362946749592713,
+  "n_test": 966,
+  "exp_id": "cv5_final_f4",
+  "model": "convnext_base.fb_in22k_ft_in1k_384",
+  "img_size": 384,
+  "params_m": 87.771464,
+  "gflops": 45.121298432,
+  "latency_ms": 46.303653717041016,
+  "train_time_min": 66.61066873073578,
+  "epochs": 30,
+  "final_train_acc": 0.9979290706704633,
+  "final_train_loss": 0.011895098283967915,
+  "final_test_loss": 0.21577228605747223,
+  "train_test_gap": 0.0621112652874406,
+  "description": "5-fold CV, fold 4: the final recipe trained on the other 4 folds of the training set and validated on fold 4 (test set untouched)"
+}

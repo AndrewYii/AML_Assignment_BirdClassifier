@@ -1,0 +1,15 @@
+base: base.yaml
+exp_id: e1_overfit_sanity
+description: "Sanity check - ConvNeXt-T must memorise a tiny subset (10 classes x 5 imgs), no augmentation/regularisation"
+save_ckpt: false
+data:
+  aug: none
+  subset: {n_classes: 10, per_class: 5}
+  num_workers: 2
+model:
+  name: convnext_tiny.fb_in1k
+train:
+  epochs: 30
+  warmup_epochs: 0
+  batch_size: 10
+  weight_decay: 0.0

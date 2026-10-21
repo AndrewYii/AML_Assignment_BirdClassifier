@@ -1,0 +1,23 @@
+{
+  "top1": 0.8654485049833887,
+  "mean_class_acc": 0.8632500000000001,
+  "top5": 0.973421926910299,
+  "macro_precision": 0.8800790043290043,
+  "macro_recall": 0.8632500000000001,
+  "macro_f1": 0.8607552433806304,
+  "weighted_f1": 0.8631019178048944,
+  "n_test": 1204,
+  "exp_id": "e6f_strong_aug_mix_long",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 22.205042839050293,
+  "train_time_min": 39.599074010054274,
+  "epochs": 60,
+  "final_train_acc": 0.804609634551495,
+  "final_train_loss": 0.7286099506715356,
+  "final_test_loss": 0.5059175491333008,
+  "train_test_gap": -0.06083887043189362,
+  "description": "Regularisation + longer schedule - strong aug + MixUp/CutMix (50%), 60 epochs (tests the under-training explanation from E6a-c)"
+}

@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e7_pool_min
+description: "Head pooling study - global min pooling instead of global average pooling (ConvNeXt-T)"
+model:
+  pooling: min

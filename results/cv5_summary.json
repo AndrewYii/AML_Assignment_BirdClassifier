@@ -1,0 +1,104 @@
+{
+  "final": {
+    "folds_done": 5,
+    "per_fold": [
+      {
+        "fold": 1,
+        "top1": 92.96,
+        "mca": 92.89,
+        "best_epoch_top1": 93.89,
+        "best_epoch": 11,
+        "train_acc": 99.66
+      },
+      {
+        "fold": 2,
+        "top1": 94.0,
+        "mca": 93.98,
+        "best_epoch_top1": 94.72,
+        "best_epoch": 6,
+        "train_acc": 99.72
+      },
+      {
+        "fold": 3,
+        "top1": 93.89,
+        "mca": 93.71,
+        "best_epoch_top1": 94.1,
+        "best_epoch": 26,
+        "train_acc": 99.69
+      },
+      {
+        "fold": 4,
+        "top1": 93.58,
+        "mca": 93.62,
+        "best_epoch_top1": 94.62,
+        "best_epoch": 8,
+        "train_acc": 99.79
+      },
+      {
+        "fold": 5,
+        "top1": 93.58,
+        "mca": 93.5,
+        "best_epoch_top1": 94.61,
+        "best_epoch": 13,
+        "train_acc": 99.82
+      }
+    ],
+    "val_top1_mean": 93.60115427112498,
+    "val_top1_std": 0.40369021507411523,
+    "val_mca_mean": 93.5407142857143,
+    "best_minus_last_mean": 0.7869640309378951,
+    "test_top1": 94.01993355481729,
+    "test_run": "e15b_ema_convnext_base"
+  },
+  "baseline": {
+    "folds_done": 5,
+    "per_fold": [
+      {
+        "fold": 1,
+        "top1": 80.54,
+        "mca": 80.37,
+        "best_epoch_top1": 80.54,
+        "best_epoch": 25,
+        "train_acc": 99.56
+      },
+      {
+        "fold": 2,
+        "top1": 81.06,
+        "mca": 80.36,
+        "best_epoch_top1": 81.06,
+        "best_epoch": 26,
+        "train_acc": 99.38
+      },
+      {
+        "fold": 3,
+        "top1": 82.09,
+        "mca": 81.57,
+        "best_epoch_top1": 82.71,
+        "best_epoch": 26,
+        "train_acc": 99.53
+      },
+      {
+        "fold": 4,
+        "top1": 81.47,
+        "mca": 81.12,
+        "best_epoch_top1": 81.47,
+        "best_epoch": 30,
+        "train_acc": 99.48
+      },
+      {
+        "fold": 5,
+        "top1": 80.0,
+        "mca": 79.48,
+        "best_epoch_top1": 80.31,
+        "best_epoch": 27,
+        "train_acc": 99.22
+      }
+    ],
+    "val_top1_mean": 81.03105590062111,
+    "val_top1_std": 0.8097594082457885,
+    "val_mca_mean": 80.58142857142857,
+    "best_minus_last_mean": 0.1863997682875805,
+    "test_top1": 82.05980066445183,
+    "test_run": "e2_baseline_resnet50"
+  }
+}

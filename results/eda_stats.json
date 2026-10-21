@@ -1,0 +1,40 @@
+{
+  "n_classes": 200,
+  "n_train": 4829,
+  "n_test": 1204,
+  "train_per_class": {
+    "min": 16,
+    "max": 31,
+    "mean": 24.145,
+    "median": 25.0
+  },
+  "test_per_class": {
+    "min": 4,
+    "max": 8,
+    "mean": 6.02
+  },
+  "imbalance_ratio": 1.9375,
+  "width": {
+    "min": 162,
+    "max": 500,
+    "median": 500.0
+  },
+  "height": {
+    "min": 121,
+    "max": 500,
+    "median": 375.0
+  },
+  "classes_per_family": {
+    "Flycatcher": 7,
+    "Sparrow": 21,
+    "Warbler": 25,
+    "Vireo": 7
+  },
+  "fewest_train": [
+    "Spotted Catbird",
+    "Whip poor Will",
+    "Summer Tanager",
+    "Tree Sparrow",
+    "Yellow Warbler"
+  ]
+}

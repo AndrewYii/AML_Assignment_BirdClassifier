@@ -1,0 +1,23 @@
+{
+  "top1": 0.8687707641196013,
+  "mean_class_acc": 0.8658690476190478,
+  "top5": 0.9692691029900332,
+  "macro_precision": 0.8798502886002886,
+  "macro_recall": 0.8658690476190478,
+  "macro_f1": 0.8627587902293786,
+  "weighted_f1": 0.8658766231868147,
+  "n_test": 1204,
+  "exp_id": "e5_batch16_seed1",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 24.01677370071411,
+  "train_time_min": 20.333214577039083,
+  "epochs": 30,
+  "final_train_acc": 0.9952371091323255,
+  "final_train_loss": 0.026171133246467207,
+  "final_test_loss": 0.4947666823863983,
+  "train_test_gap": 0.12646634501272425,
+  "description": "Noise check - E5 batch-16 recipe repeated with seed 1 (measures run-to-run variance)"
+}

@@ -1,0 +1,9 @@
+species,test_imgs,train_imgs,test_acc,clean_train_acc,baseline_test_acc,confused_with,true_in_top5,wrong_conf_mean
+American Crow,5,22,40.0,100.0,20.0,Fish Crow x2; Common Raven x1,3/3,71.0
+Common Tern,7,26,42.9,100.0,14.3,Artic Tern x2; Forsters Tern x1,4/4,81.0
+Henslow Sparrow,7,26,57.1,100.0,57.1,Savannah Sparrow x2; Seaside Sparrow x1,3/3,74.0
+Anna Hummingbird,5,19,60.0,100.0,100.0,Ruby throated Hummingbird x2,2/2,54.0
+Least Flycatcher,6,26,66.7,100.0,50.0,Acadian Flycatcher x2,2/2,50.0
+Fish Crow,6,25,66.7,100.0,50.0,Common Raven x1; American Crow x1,2/2,91.0
+Great Grey Shrike,6,22,66.7,100.0,83.3,Loggerhead Shrike x2,2/2,86.0
+Olive sided Flycatcher,6,25,66.7,100.0,66.7,Western Wood Pewee x2,2/2,90.0

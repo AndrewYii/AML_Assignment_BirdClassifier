@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e5_batch16_seed1
+description: "Noise check - E5 batch-16 recipe repeated with seed 1 (measures run-to-run variance)"
+seed: 1
+save_ckpt: false

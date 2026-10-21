@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e8_linear_probe
+description: "Fine-tune strategy - linear probe: backbone frozen, only the 200-way head is trained (head LR 5e-4 as in the recipe)"
+train:
+  strategy: linear_probe

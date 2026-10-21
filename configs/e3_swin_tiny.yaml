@@ -1,0 +1,5 @@
+base: base.yaml
+exp_id: e3_swin_tiny
+description: "Fair comparison - Swin-Tiny transformer (IN-1k, 28.3M) with the exact baseline recipe"
+model:
+  name: swin_tiny_patch4_window7_224.ms_in1k

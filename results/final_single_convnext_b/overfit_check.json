@@ -1,0 +1,12 @@
+{
+  "run": "e15b_ema_convnext_base",
+  "train_acc": 0.999171671153448,
+  "train_loss": 0.0028112472500652075,
+  "train_classes_at_100": 196,
+  "train_worst_class_acc": 0.9523809523809523,
+  "test_acc": 0.9401993355481728,
+  "test_loss": 0.2823852002620697,
+  "test_classes_at_100": 145,
+  "test_worst_class_acc": 0.4,
+  "gap_points": 5.897233560527515
+}

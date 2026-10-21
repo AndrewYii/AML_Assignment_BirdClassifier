@@ -1,0 +1,5 @@
+base: e11_convnext_base_22k_384.yaml
+exp_id: e15b_ema_convnext_base
+description: "Best CNN (ConvNeXt-B IN-22k, 384 px) + EMA of weights (decay up to 0.999, warm-up ramp); the EMA copy is evaluated and reported"
+train:
+  ema_decay: 0.999

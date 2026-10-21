@@ -1,0 +1,5 @@
+base: e11_convnext_base_22k_384.yaml
+exp_id: e11b_convnext_base_22k_384_lowlr
+description: "Control - ImageNet-22k ConvNeXt-B 384 with a 5x lower backbone LR (1e-5): does a lower LR help the big model?"
+train:
+  lr: 1.0e-5

@@ -1,0 +1,23 @@
+{
+  "top1": 0.8662790697674418,
+  "mean_class_acc": 0.8630119047619047,
+  "top5": 0.9700996677740864,
+  "macro_precision": 0.8748015873015873,
+  "macro_recall": 0.8630119047619047,
+  "macro_f1": 0.8610630456145162,
+  "weighted_f1": 0.8647330900702018,
+  "n_test": 1204,
+  "exp_id": "e7_pool_gem",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973929,
+  "gflops": 4.454916864,
+  "latency_ms": 21.381747722625732,
+  "train_time_min": 17.599250741799672,
+  "epochs": 30,
+  "final_train_acc": 0.9931662870159453,
+  "final_train_loss": 0.04206768309685551,
+  "final_test_loss": 0.5170144438743591,
+  "train_test_gap": 0.1268872172485035,
+  "description": "Head pooling study - global gem pooling instead of global average pooling (ConvNeXt-T)"
+}

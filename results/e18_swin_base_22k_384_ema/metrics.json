@@ -1,0 +1,23 @@
+{
+  "top1": 0.9260797342192691,
+  "mean_class_acc": 0.9264226190476191,
+  "top5": 0.9867109634551495,
+  "macro_precision": 0.9313749999999998,
+  "macro_recall": 0.9264226190476191,
+  "macro_f1": 0.9233934562169855,
+  "weighted_f1": 0.9246969783197067,
+  "n_test": 1204,
+  "exp_id": "e18_swin_base_22k_384_ema",
+  "model": "swin_base_patch4_window12_384.ms_in22k_ft_in1k",
+  "img_size": 384,
+  "params_m": 87.083584,
+  "gflops": 47.082315776,
+  "latency_ms": 79.29121255874634,
+  "train_time_min": 135.19015938838322,
+  "epochs": 30,
+  "final_train_acc": 0.9975150134603438,
+  "final_train_loss": 0.010569498711183657,
+  "final_test_loss": 0.35497385263442993,
+  "train_test_gap": 0.07143527924107462,
+  "description": "Fair large-scale CNN vs Transformer: Swin-B (88M, ImageNet-22k -> 1k at 384 px) with EXACTLY the final ConvNeXt-B recipe (384 px, EMA, LR 5e-5/5e-4, batch 8x2, 30 epochs); only the backbone changes"
+}

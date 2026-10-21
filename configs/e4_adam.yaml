@@ -1,0 +1,6 @@
+base: e3_convnext_tiny.yaml
+exp_id: e4_adam
+description: "Optimizer study - Adam (coupled L2 weight decay 1e-4), same LRs as AdamW (1e-4 / 1e-3)"
+train:
+  optimizer: adam
+  weight_decay: 1.0e-4

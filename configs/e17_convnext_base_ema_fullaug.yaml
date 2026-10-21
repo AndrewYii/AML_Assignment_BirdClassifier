@@ -1,0 +1,10 @@
+base: e15b_ema_convnext_base.yaml
+exp_id: e17_convnext_base_ema_fullaug
+description: "Robustness check at full scale - final CNN (ConvNeXt-B IN-22k 384 px + EMA) with the full regularisation package: strong aug (RandAugment + RandomErasing) + MixUp/CutMix (50% of batches) + label smoothing 0.1; same 30 epochs"
+data:
+  aug: strong
+train:
+  mixup: 0.8
+  cutmix: 1.0
+  mix_prob: 0.5
+  label_smoothing: 0.1

@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e14_two_phase
+description: "Two-phase (progressive) fine-tuning, a common recipe: 8 epochs head-only (backbone frozen), then 22 epochs full fine-tuning with a fresh warm-up + cosine; same LRs and 30 epochs total"
+train:
+  freeze_epochs: 8

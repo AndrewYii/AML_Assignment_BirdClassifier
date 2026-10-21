@@ -1,0 +1,5 @@
+base: e15b_ema_convnext_base.yaml
+exp_id: e18_swin_base_22k_384_ema
+description: "Fair large-scale CNN vs Transformer: Swin-B (88M, ImageNet-22k -> 1k at 384 px) with EXACTLY the final ConvNeXt-B recipe (384 px, EMA, LR 5e-5/5e-4, batch 8x2, 30 epochs); only the backbone changes"
+model:
+  name: swin_base_patch4_window12_384.ms_in22k_ft_in1k

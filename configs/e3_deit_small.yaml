@@ -1,0 +1,5 @@
+base: base.yaml
+exp_id: e3_deit_small
+description: "Fair comparison - DeiT-Small ViT (IN-1k, 22M) with the exact baseline recipe"
+model:
+  name: deit_small_patch16_224.fb_in1k

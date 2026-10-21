@@ -1,0 +1,23 @@
+{
+  "top1": 0.867109634551495,
+  "mean_class_acc": 0.8638095238095238,
+  "top5": 0.9609634551495017,
+  "macro_precision": 0.8775719696969699,
+  "macro_recall": 0.8638095238095238,
+  "macro_f1": 0.86232652396623,
+  "weighted_f1": 0.8649910393766658,
+  "n_test": 1204,
+  "exp_id": "e6b_label_smoothing",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 19.054830074310303,
+  "train_time_min": 16.56943879922231,
+  "epochs": 30,
+  "final_train_acc": 0.9946158624974115,
+  "final_train_loss": 0.9244064708925177,
+  "final_test_loss": 0.8773005604743958,
+  "train_test_gap": 0.12750622794591648,
+  "description": "Regularisation (alone) - label smoothing 0.1 (target 0.9 for true class, rest spread over others)"
+}

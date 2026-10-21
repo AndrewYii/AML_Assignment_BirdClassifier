@@ -1,0 +1,23 @@
+{
+  "top1": 0.6777408637873754,
+  "mean_class_acc": 0.6742916666666666,
+  "top5": 0.9119601328903655,
+  "macro_precision": 0.7089968434343434,
+  "macro_recall": 0.6742916666666666,
+  "macro_f1": 0.6659622391954975,
+  "weighted_f1": 0.6677177152509747,
+  "n_test": 1204,
+  "exp_id": "e8_linear_probe",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 32.71584510803223,
+  "train_time_min": 13.345789738496144,
+  "epochs": 30,
+  "final_train_acc": 0.8275005177055291,
+  "final_train_loss": 0.9962576974077634,
+  "final_test_loss": 1.3776732683181763,
+  "train_test_gap": 0.1497596539181537,
+  "description": "Fine-tune strategy - linear probe: backbone frozen, only the 200-way head is trained (head LR 5e-4 as in the recipe)"
+}

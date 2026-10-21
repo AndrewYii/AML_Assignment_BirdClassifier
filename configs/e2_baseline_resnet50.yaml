@@ -1,0 +1,3 @@
+base: base.yaml
+exp_id: e2_baseline_resnet50
+description: "Baseline - ResNet-50 (ImageNet-1k), 224px, basic augmentation, plain CE, single-stage fine-tuning"

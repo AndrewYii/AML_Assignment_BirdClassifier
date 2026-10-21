@@ -1,0 +1,45 @@
+exp_id: e1_overfit_sanity
+description: Sanity check - ConvNeXt-T must memorise a tiny subset (10 classes x 5
+  imgs), no augmentation/regularisation
+seed: 42
+save_ckpt: false
+data:
+  train_txt: dataset/train.txt
+  test_txt: dataset/test.txt
+  train_dir: dataset/Train
+  test_dir: dataset/Test
+  img_size: 224
+  crop_pct: 0.875
+  aug: none
+  subset:
+    n_classes: 10
+    per_class: 5
+  num_workers: 2
+model:
+  name: convnext_tiny.fb_in1k
+  pretrained: true
+  num_classes: 200
+  dropout: 0.0
+  drop_path: 0.0
+  pooling: avg
+  grad_ckpt: false
+train:
+  epochs: 30
+  warmup_epochs: 0
+  batch_size: 10
+  accum_steps: 1
+  eval_batch_size: 64
+  optimizer: adamw
+  strategy: full
+  lr: 0.0001
+  head_lr: 0.001
+  weight_decay: 0.0
+  momentum: 0.9
+  label_smoothing: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  min_lr_ratio: 0.01
+  amp: true
+  clip_grad: null
+  eval_every: 1
+git: b18ffa2

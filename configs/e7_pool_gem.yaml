@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e7_pool_gem
+description: "Head pooling study - global gem pooling instead of global average pooling (ConvNeXt-T)"
+model:
+  pooling: gem

@@ -1,0 +1,53 @@
+# FINAL RECIPE - ConvNeXt-Base CNN, ImageNet-22k weights, 384 px, weight EMA.
+# Self-contained copy of the exact settings used for run e15b_ema_convnext_base
+# (= configs/e15b_ema_convnext_base.yaml with its base chain e11 -> e5_batch16 -> e3 -> base resolved).
+# One model on all 4,829 training images: test top-1 94.02 %, mean per-class 93.97 %.
+# FINAL MODEL = this recipe trained 5 times by 5-fold cross-validation (configs/cv/cv_final_f1..f5.yaml,
+# each on 4/5 of the training images) with the five models' softmax outputs averaged:
+# test top-1 94.93 %, mean per-class 94.88 %  (ensemble.py --runs cv5_final_f1 ... cv5_final_f5).
+# Train one model with:  .venv/Scripts/python train.py --config configs/final/final_cnn_convnext_b.yaml
+exp_id: final_cnn_convnext_b
+seed: 42                       # fixed seed for repeatability (3-seed noise = +/-0.66 top-1)
+save_ckpt: true
+
+data:
+  train_txt: dataset/train.txt
+  test_txt: dataset/test.txt
+  train_dir: dataset/Train
+  test_dir: dataset/Test
+  img_size: 384                # 224 -> 384 px gave +2.3 (E10): field marks need pixels
+  crop_pct: 0.875              # test: resize short side to 384/0.875 = 438, centre-crop 384
+  aug: basic                   # RandomResizedCrop(35-100 %) + flip + rotation 15 deg + ColorJitter 0.2
+                               # (src/data.py build_transforms); stronger aug / MixUp gave no gain (E6)
+  subset: null                 # full training set
+  num_workers: 3
+
+model:
+  name: convnext_base.fb_in22k_ft_in1k_384   # timm weights: ImageNet-22k -> ImageNet-1k at 384 px
+  pretrained: true
+  num_classes: 200             # new randomly initialised 200-way linear head
+  dropout: 0.0
+  drop_path: 0.0               # stochastic depth hurt (-1.5, E6d)
+  pooling: avg                 # global average pooling; max / min / GeM were worse (E7)
+  grad_ckpt: true              # gradient checkpointing: fits 384 px ConvNeXt-B in 8 GB VRAM
+
+train:
+  epochs: 30                   # fixed budget; LAST epoch is reported (no validation split)
+  warmup_epochs: 3             # linear LR warm-up, then cosine decay to 1 % (min_lr_ratio)
+  batch_size: 8                # 8 x 2 gradient accumulation = effective batch 16 (16 / 32 / 64 within noise, E5)
+  accum_steps: 2
+  eval_batch_size: 16
+  optimizer: adamw             # AdamW ~ Adam >> SGD (-3.9, E4)
+  strategy: full               # differential LR: backbone and head get different LRs (E8)
+  lr: 5.0e-05                  # backbone LR (pretrained features move slowly)
+  head_lr: 5.0e-04             # head LR, 10x larger (new random layer learns fast)
+  weight_decay: 0.05           # decoupled weight decay; 0.2 gave no gain (E6e)
+  momentum: 0.9                # (SGD only - not used)
+  label_smoothing: 0.0         # plain cross-entropy; label smoothing gave no gain (E6b)
+  mixup: 0.0                   # (not used)
+  cutmix: 0.0                  # (not used)
+  min_lr_ratio: 0.01
+  amp: true                    # bfloat16 mixed precision
+  clip_grad: null
+  eval_every: 1                # test metrics per epoch are logged only to draw learning curves
+  ema_decay: 0.999             # weight EMA (ramps up to 0.999): 4x steadier test curve (E15b)

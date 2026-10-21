@@ -1,0 +1,23 @@
+{
+  "top1": 0.8820598006644518,
+  "mean_class_acc": 0.8803869047619048,
+  "top5": 0.9667774086378738,
+  "macro_precision": 0.8940734126984127,
+  "macro_recall": 0.8803869047619048,
+  "macro_f1": 0.878899589316772,
+  "weighted_f1": 0.8806485245135308,
+  "n_test": 1204,
+  "exp_id": "e15a_ema_tiny",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 22.078728675842285,
+  "train_time_min": 21.238359836737313,
+  "epochs": 30,
+  "final_train_acc": 0.9935804514392214,
+  "final_train_loss": 0.03194009773795786,
+  "final_test_loss": 0.49728915095329285,
+  "train_test_gap": 0.11152065077476958,
+  "description": "EMA of weights (decay up to 0.999, warm-up ramp) on the ConvNeXt-T 224 px batch-16 recipe; the EMA copy is evaluated and reported"
+}

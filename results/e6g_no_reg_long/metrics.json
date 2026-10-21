@@ -1,0 +1,23 @@
+{
+  "top1": 0.8729235880398671,
+  "mean_class_acc": 0.8710892857142858,
+  "top5": 0.9642857142857143,
+  "macro_precision": 0.8849464285714287,
+  "macro_recall": 0.8710892857142858,
+  "macro_f1": 0.8687621447180272,
+  "weighted_f1": 0.8707984018945031,
+  "n_test": 1204,
+  "exp_id": "e6g_no_reg_long",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 24.06933307647705,
+  "train_time_min": 38.97825880845388,
+  "epochs": 60,
+  "final_train_acc": 0.9977220956719818,
+  "final_train_loss": 0.010445862954498251,
+  "final_test_loss": 0.5319893956184387,
+  "train_test_gap": 0.12479850763211464,
+  "description": "Control for E6f - E5 batch-16 recipe with NO extra regularisation, 60 epochs (separates the effect of regularisation from the effect of training longer)"
+}

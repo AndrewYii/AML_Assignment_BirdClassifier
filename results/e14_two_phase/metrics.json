@@ -1,0 +1,23 @@
+{
+  "top1": 0.8554817275747508,
+  "mean_class_acc": 0.8535416666666665,
+  "top5": 0.96843853820598,
+  "macro_precision": 0.8685800865800866,
+  "macro_recall": 0.8535416666666665,
+  "macro_f1": 0.851121514020895,
+  "weighted_f1": 0.8523250041272398,
+  "n_test": 1204,
+  "exp_id": "e14_two_phase",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 19.459402561187744,
+  "train_time_min": 14.974446042378743,
+  "epochs": 30,
+  "final_train_acc": 0.9939946158624974,
+  "final_train_loss": 0.03864818765901586,
+  "final_test_loss": 0.5217719674110413,
+  "train_test_gap": 0.13851288828774655,
+  "description": "Two-phase (progressive) fine-tuning, a common recipe: 8 epochs head-only (backbone frozen), then 22 epochs full fine-tuning with a fresh warm-up + cosine; same LRs and 30 epochs total"
+}

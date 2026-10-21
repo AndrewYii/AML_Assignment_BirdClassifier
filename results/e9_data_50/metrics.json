@@ -1,0 +1,23 @@
+{
+  "top1": 0.8006644518272426,
+  "mean_class_acc": 0.7933630952380952,
+  "top5": 0.9526578073089701,
+  "macro_precision": 0.8183551587301587,
+  "macro_recall": 0.7933630952380952,
+  "macro_f1": 0.7921696901309905,
+  "weighted_f1": 0.7982823350985334,
+  "n_test": 1204,
+  "exp_id": "e9_data_50",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 18.886470794677734,
+  "train_time_min": 10.812690615653992,
+  "epochs": 30,
+  "final_train_acc": 0.9946982055464927,
+  "final_train_loss": 0.044304529566554805,
+  "final_test_loss": 0.7355012893676758,
+  "train_test_gap": 0.19403375371925013,
+  "description": "Training-set size study - keep 50% of the training images of every class (stratified), same test set"
+}

@@ -1,0 +1,15 @@
+base: e5_batch16.yaml
+exp_id: e11_convnext_base_22k_384
+description: "Scaling - ConvNeXt-Base (89M) pretrained on ImageNet-22k then 1k at 384 px, fine-tuned at 384 px; batch 16 = 8 x 2 accum, grad checkpointing for 8 GB"
+model:
+  name: convnext_base.fb_in22k_ft_in1k_384
+  grad_ckpt: true
+data:
+  num_workers: 3
+  img_size: 384
+train:
+  batch_size: 8
+  accum_steps: 2
+  eval_batch_size: 16
+
+# big models are GPU-bound; fewer loader processes saves RAM (16 GB machine)

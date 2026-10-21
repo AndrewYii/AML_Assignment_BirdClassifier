@@ -1,0 +1,23 @@
+{
+  "top1": 0.8646179401993356,
+  "mean_class_acc": 0.8603333333333333,
+  "top5": 0.9593023255813954,
+  "macro_precision": 0.8739873737373738,
+  "macro_recall": 0.8603333333333333,
+  "macro_f1": 0.8580624367462601,
+  "weighted_f1": 0.8609760751213261,
+  "n_test": 1204,
+  "exp_id": "e8_layer_decay",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 22.268688678741455,
+  "train_time_min": 18.859493684768676,
+  "epochs": 30,
+  "final_train_acc": 0.9962725201905156,
+  "final_train_loss": 0.013889775728526434,
+  "final_test_loss": 0.5952736735343933,
+  "train_test_gap": 0.13165457999118002,
+  "description": "Fine-tune strategy - layer-wise LR decay 0.85 over 19 layer groups: head 5e-4 down to ~2e-5 at the stem (early generic features move least)"
+}

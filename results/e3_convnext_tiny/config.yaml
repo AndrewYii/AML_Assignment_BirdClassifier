@@ -1,0 +1,43 @@
+exp_id: e3_convnext_tiny
+description: Fair comparison - ConvNeXt-Tiny (IN-1k, 28.6M) with the exact baseline
+  recipe
+seed: 42
+save_ckpt: true
+data:
+  train_txt: dataset/train.txt
+  test_txt: dataset/test.txt
+  train_dir: dataset/Train
+  test_dir: dataset/Test
+  img_size: 224
+  crop_pct: 0.875
+  aug: basic
+  subset: null
+  num_workers: 6
+model:
+  name: convnext_tiny.fb_in1k
+  pretrained: true
+  num_classes: 200
+  dropout: 0.0
+  drop_path: 0.0
+  pooling: avg
+  grad_ckpt: false
+train:
+  epochs: 30
+  warmup_epochs: 3
+  batch_size: 32
+  accum_steps: 1
+  eval_batch_size: 64
+  optimizer: adamw
+  strategy: full
+  lr: 0.0001
+  head_lr: 0.001
+  weight_decay: 0.05
+  momentum: 0.9
+  label_smoothing: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  min_lr_ratio: 0.01
+  amp: true
+  clip_grad: null
+  eval_every: 1
+git: 111f776

@@ -1,0 +1,8 @@
+dataset/Test
+dataset/Train
+.venv/
+runs/
+__pycache__/
+*.pyc
+app/weights/
+app/core/

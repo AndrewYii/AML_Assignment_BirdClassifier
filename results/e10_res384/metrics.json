@@ -1,0 +1,23 @@
+{
+  "top1": 0.8995016611295681,
+  "mean_class_acc": 0.8990416666666667,
+  "top5": 0.9800664451827242,
+  "macro_precision": 0.90908658008658,
+  "macro_recall": 0.8990416666666667,
+  "macro_f1": 0.8976359335109335,
+  "weighted_f1": 0.8982530458651723,
+  "n_test": 1204,
+  "exp_id": "e10_res384",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 384,
+  "params_m": 27.973928,
+  "gflops": 13.091702784,
+  "latency_ms": 19.353461265563965,
+  "train_time_min": 31.34625398317973,
+  "epochs": 30,
+  "final_train_acc": 0.9971008490370677,
+  "final_train_loss": 0.021763308395335183,
+  "final_test_loss": 0.40026456117630005,
+  "train_test_gap": 0.09759918790749966,
+  "description": "Resolution study - 384 px input (same ConvNeXt-T IN-1k weights); batch 16 = 8 x 2 grad-accum to fit 8 GB"
+}

@@ -1,0 +1,8 @@
+base: e3_convnext_tiny.yaml
+exp_id: e4_sgd
+description: "Optimizer study - SGD+Nesterov momentum 0.9 at its standard fine-tuning LR (backbone 1e-2, head 1e-1), L2 wd 1e-4"
+train:
+  optimizer: sgd
+  lr: 1.0e-2
+  head_lr: 1.0e-1
+  weight_decay: 1.0e-4

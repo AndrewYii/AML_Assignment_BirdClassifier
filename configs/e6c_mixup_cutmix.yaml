@@ -1,0 +1,7 @@
+base: e5_batch16.yaml
+exp_id: e6c_mixup_cutmix
+description: "Regularisation (alone) - MixUp(alpha 0.8) / CutMix(alpha 1.0), applied to 50% of batches"
+train:
+  mixup: 0.8
+  cutmix: 1.0
+  mix_prob: 0.5

@@ -1,0 +1,23 @@
+{
+  "top1": 0.8146997929606625,
+  "mean_class_acc": 0.8112380952380953,
+  "top5": 0.9451345755693582,
+  "macro_precision": 0.8309623015873016,
+  "macro_recall": 0.8112380952380953,
+  "macro_f1": 0.806889221889222,
+  "weighted_f1": 0.8114716603847038,
+  "n_test": 966,
+  "exp_id": "cv5_baseline_f4",
+  "model": "resnet50.tv2_in1k",
+  "img_size": 224,
+  "params_m": 23.917832,
+  "gflops": 4.087545856,
+  "latency_ms": 15.974509716033936,
+  "train_time_min": 9.314325968424479,
+  "epochs": 30,
+  "final_train_acc": 0.9948226766761584,
+  "final_train_loss": 0.02516407667727451,
+  "final_test_loss": 0.7796368598937988,
+  "train_test_gap": 0.1801228837154959,
+  "description": "5-fold CV, fold 4: the baseline recipe trained on the other 4 folds of the training set and validated on fold 4 (test set untouched)"
+}

@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e6b_label_smoothing
+description: "Regularisation (alone) - label smoothing 0.1 (target 0.9 for true class, rest spread over others)"
+train:
+  label_smoothing: 0.1

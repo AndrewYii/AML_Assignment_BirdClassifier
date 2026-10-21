@@ -1,0 +1,6 @@
+base: e5_batch16.yaml
+exp_id: e6g_no_reg_long
+description: "Control for E6f - E5 batch-16 recipe with NO extra regularisation, 60 epochs (separates the effect of regularisation from the effect of training longer)"
+train:
+  epochs: 60
+  warmup_epochs: 5

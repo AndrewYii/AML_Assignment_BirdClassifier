@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e15a_ema_tiny
+description: "EMA of weights (decay up to 0.999, warm-up ramp) on the ConvNeXt-T 224 px batch-16 recipe; the EMA copy is evaluated and reported"
+train:
+  ema_decay: 0.999

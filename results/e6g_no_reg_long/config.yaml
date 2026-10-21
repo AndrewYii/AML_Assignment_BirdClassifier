@@ -1,0 +1,43 @@
+exp_id: e6g_no_reg_long
+description: Control for E6f - E5 batch-16 recipe with NO extra regularisation, 60
+  epochs (separates the effect of regularisation from the effect of training longer)
+seed: 42
+save_ckpt: true
+data:
+  train_txt: dataset/train.txt
+  test_txt: dataset/test.txt
+  train_dir: dataset/Train
+  test_dir: dataset/Test
+  img_size: 224
+  crop_pct: 0.875
+  aug: basic
+  subset: null
+  num_workers: 4
+model:
+  name: convnext_tiny.fb_in1k
+  pretrained: true
+  num_classes: 200
+  dropout: 0.0
+  drop_path: 0.0
+  pooling: avg
+  grad_ckpt: false
+train:
+  epochs: 60
+  warmup_epochs: 5
+  batch_size: 16
+  accum_steps: 1
+  eval_batch_size: 64
+  optimizer: adamw
+  strategy: full
+  lr: 5.0e-05
+  head_lr: 0.0005
+  weight_decay: 0.05
+  momentum: 0.9
+  label_smoothing: 0.0
+  mixup: 0.0
+  cutmix: 0.0
+  min_lr_ratio: 0.01
+  amp: true
+  clip_grad: null
+  eval_every: 1
+git: 8be9ed3

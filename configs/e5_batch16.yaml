@@ -1,0 +1,7 @@
+base: e3_convnext_tiny.yaml
+exp_id: e5_batch16
+description: "Batch-size study - batch 16, LR scaled linearly (x0.5)"
+train:
+  batch_size: 16
+  lr: 5.0e-5
+  head_lr: 5.0e-4

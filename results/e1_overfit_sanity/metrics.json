@@ -1,0 +1,23 @@
+{
+  "top1": 1.0,
+  "mean_class_acc": 1.0,
+  "top5": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "weighted_f1": 1.0,
+  "n_test": 50,
+  "exp_id": "e1_overfit_sanity",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.827818,
+  "gflops": 4.454770944,
+  "latency_ms": 27.051782608032227,
+  "train_time_min": 1.3020777781804402,
+  "epochs": 30,
+  "final_train_acc": 1.0,
+  "final_train_loss": 0.006223449669778347,
+  "final_test_loss": 0.006228107959032059,
+  "train_test_gap": 0.0,
+  "description": "Sanity check - ConvNeXt-T must memorise a tiny subset (10 classes x 5 imgs), no augmentation/regularisation"
+}

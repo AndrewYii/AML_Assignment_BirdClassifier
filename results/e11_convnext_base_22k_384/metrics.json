@@ -1,0 +1,23 @@
+{
+  "top1": 0.9435215946843853,
+  "mean_class_acc": 0.9428214285714286,
+  "top5": 0.9900332225913622,
+  "macro_precision": 0.9475456349206348,
+  "macro_recall": 0.9428214285714286,
+  "macro_f1": 0.9417932591574233,
+  "weighted_f1": 0.9430003061973506,
+  "n_test": 1204,
+  "exp_id": "e11_convnext_base_22k_384",
+  "model": "convnext_base.fb_in22k_ft_in1k_384",
+  "img_size": 384,
+  "params_m": 87.771464,
+  "gflops": 45.121298432,
+  "latency_ms": 56.26140832901001,
+  "train_time_min": 88.10011259714763,
+  "epochs": 30,
+  "final_train_acc": 0.9973079312487058,
+  "final_train_loss": 0.011764835857067448,
+  "final_test_loss": 0.27119842171669006,
+  "train_test_gap": 0.053786336564320414,
+  "description": "Scaling - ConvNeXt-Base (89M) pretrained on ImageNet-22k then 1k at 384 px, fine-tuned at 384 px; batch 16 = 8 x 2 accum, grad checkpointing for 8 GB"
+}

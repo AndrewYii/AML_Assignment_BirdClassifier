@@ -1,0 +1,46 @@
+# Shared recipe for every experiment. Each experiment config starts with
+# `base: base.yaml` and lists ONLY what it changes, so the diff is the experiment.
+exp_id: base
+description: ""
+seed: 42
+save_ckpt: true
+
+data:
+  train_txt: dataset/train.txt
+  test_txt: dataset/test.txt
+  train_dir: dataset/Train
+  test_dir: dataset/Test
+  img_size: 224
+  crop_pct: 0.875          # test: resize short side to 256, centre-crop 224 (same for all runs)
+  aug: basic               # none | basic | strong
+  subset: null             # {n_classes, per_class} or {fraction}
+  num_workers: 4            # RAM: each worker is a separate process on Windows
+
+model:
+  name: resnet50.tv2_in1k  # baseline backbone (ImageNet-1k)
+  pretrained: true
+  num_classes: 200
+  dropout: 0.0
+  drop_path: 0.0
+  pooling: avg             # avg | max | min | gem  (CNNs)
+  grad_ckpt: false
+
+train:
+  epochs: 30               # fixed budget, last epoch is reported (no validation split)
+  warmup_epochs: 3
+  batch_size: 32
+  accum_steps: 1
+  eval_batch_size: 64
+  optimizer: adamw
+  strategy: full           # full (differential LR) | uniform | linear_probe | layer_decay
+  lr: 1.0e-4               # pretrained backbone
+  head_lr: 1.0e-3          # new 200-way classifier
+  weight_decay: 0.05
+  momentum: 0.9            # SGD only
+  label_smoothing: 0.0     # baseline = plain cross-entropy
+  mixup: 0.0
+  cutmix: 0.0
+  min_lr_ratio: 0.01
+  amp: true
+  clip_grad: null
+  eval_every: 1            # test metrics per epoch are for learning curves only

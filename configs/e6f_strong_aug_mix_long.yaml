@@ -1,0 +1,11 @@
+base: e5_batch16.yaml
+exp_id: e6f_strong_aug_mix_long
+description: "Regularisation + longer schedule - strong aug + MixUp/CutMix (50%), 60 epochs (tests the under-training explanation from E6a-c)"
+data:
+  aug: strong
+train:
+  epochs: 60
+  warmup_epochs: 5
+  mixup: 0.8
+  cutmix: 1.0
+  mix_prob: 0.5

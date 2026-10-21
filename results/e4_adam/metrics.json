@@ -1,0 +1,23 @@
+{
+  "top1": 0.8662790697674418,
+  "mean_class_acc": 0.863970238095238,
+  "top5": 0.9717607973421927,
+  "macro_precision": 0.8781161616161617,
+  "macro_recall": 0.863970238095238,
+  "macro_f1": 0.860894909012556,
+  "weighted_f1": 0.8630850722139564,
+  "n_test": 1204,
+  "exp_id": "e4_adam",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 27.654683589935303,
+  "train_time_min": 14.409926815827687,
+  "epochs": 30,
+  "final_train_acc": 0.9954441913439636,
+  "final_train_loss": 0.023974286451346388,
+  "final_test_loss": 0.5058841705322266,
+  "train_test_gap": 0.1291651215765217,
+  "description": "Optimizer study - Adam (coupled L2 weight decay 1e-4), same LRs as AdamW (1e-4 / 1e-3)"
+}

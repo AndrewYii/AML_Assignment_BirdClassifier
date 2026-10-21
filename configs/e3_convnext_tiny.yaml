@@ -1,0 +1,5 @@
+base: base.yaml
+exp_id: e3_convnext_tiny
+description: "Fair comparison - ConvNeXt-Tiny (IN-1k, 28.6M) with the exact baseline recipe"
+model:
+  name: convnext_tiny.fb_in1k

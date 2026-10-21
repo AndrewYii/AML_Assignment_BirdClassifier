@@ -1,0 +1,201 @@
+class_id,class_name,support,accuracy,precision,recall,f1
+0,Black footed Albatross,7,1.0,1.0,1.0,1.0
+1,Laysan Albatross,5,1.0,1.0,1.0,1.0
+2,Sooty Albatross,5,1.0,1.0,1.0,1.0
+3,Groove billed Ani,7,1.0,1.0,1.0,1.0
+4,Crested Auklet,5,1.0,1.0,1.0,1.0
+5,Least Auklet,6,1.0,1.0,1.0,1.0
+6,Parakeet Auklet,7,1.0,1.0,1.0,1.0
+7,Rhinoceros Auklet,6,1.0,1.0,1.0,1.0
+8,Brewer Blackbird,5,0.8,0.8,0.8,0.8
+9,Red winged Blackbird,5,1.0,1.0,1.0,1.0
+10,Rusty Blackbird,5,0.8,1.0,0.8,0.8888888888888888
+11,Yellow headed Blackbird,6,1.0,1.0,1.0,1.0
+12,Bobolink,5,1.0,1.0,1.0,1.0
+13,Indigo Bunting,7,1.0,0.875,1.0,0.9333333333333333
+14,Lazuli Bunting,6,1.0,1.0,1.0,1.0
+15,Painted Bunting,6,0.8333333333333334,1.0,0.8333333333333334,0.9090909090909091
+16,Cardinal,5,1.0,0.8333333333333334,1.0,0.9090909090909091
+17,Spotted Catbird,4,1.0,1.0,1.0,1.0
+18,Gray Catbird,7,1.0,0.875,1.0,0.9333333333333333
+19,Yellow breasted Chat,7,1.0,1.0,1.0,1.0
+20,Eastern Towhee,6,1.0,1.0,1.0,1.0
+21,Chuck will Widow,4,0.75,0.75,0.75,0.75
+22,Brandt Cormorant,5,0.8,0.8,0.8,0.8
+23,Red faced Cormorant,4,0.75,1.0,0.75,0.8571428571428571
+24,Pelagic Cormorant,6,1.0,0.8571428571428571,1.0,0.9230769230769231
+25,Bronzed Cowbird,5,1.0,0.7142857142857143,1.0,0.8333333333333334
+26,Shiny Cowbird,6,1.0,0.75,1.0,0.8571428571428571
+27,Brown Creeper,7,1.0,1.0,1.0,1.0
+28,American Crow,5,0.8,0.8,0.8,0.8
+29,Fish Crow,6,0.5,0.6,0.5,0.5454545454545454
+30,Black billed Cuckoo,7,0.8571428571428571,1.0,0.8571428571428571,0.9230769230769231
+31,Mangrove Cuckoo,6,1.0,1.0,1.0,1.0
+32,Yellow billed Cuckoo,7,1.0,1.0,1.0,1.0
+33,Gray crowned Rosy Finch,5,1.0,1.0,1.0,1.0
+34,Purple Finch,6,0.8333333333333334,1.0,0.8333333333333334,0.9090909090909091
+35,Northern Flicker,8,1.0,1.0,1.0,1.0
+36,Acadian Flycatcher,7,0.8571428571428571,0.8571428571428571,0.8571428571428571,0.8571428571428571
+37,Great Crested Flycatcher,7,1.0,0.875,1.0,0.9333333333333333
+38,Least Flycatcher,6,0.8333333333333334,0.5555555555555556,0.8333333333333334,0.6666666666666666
+39,Olive sided Flycatcher,6,0.6666666666666666,1.0,0.6666666666666666,0.8
+40,Scissor tailed Flycatcher,7,1.0,1.0,1.0,1.0
+41,Vermilion Flycatcher,5,1.0,1.0,1.0,1.0
+42,Yellow bellied Flycatcher,7,0.7142857142857143,1.0,0.7142857142857143,0.8333333333333334
+43,Frigatebird,4,1.0,1.0,1.0,1.0
+44,Northern Fulmar,6,1.0,0.8571428571428571,1.0,0.9230769230769231
+45,Gadwall,7,1.0,1.0,1.0,1.0
+46,American Goldfinch,5,0.8,0.8,0.8,0.8
+47,European Goldfinch,7,1.0,1.0,1.0,1.0
+48,Boat tailed Grackle,7,0.8571428571428571,1.0,0.8571428571428571,0.9230769230769231
+49,Eared Grebe,7,1.0,1.0,1.0,1.0
+50,Horned Grebe,6,1.0,1.0,1.0,1.0
+51,Pied billed Grebe,6,1.0,1.0,1.0,1.0
+52,Western Grebe,7,1.0,1.0,1.0,1.0
+53,Blue Grosbeak,6,1.0,1.0,1.0,1.0
+54,Evening Grosbeak,5,1.0,1.0,1.0,1.0
+55,Pine Grosbeak,4,1.0,1.0,1.0,1.0
+56,Rose breasted Grosbeak,4,1.0,1.0,1.0,1.0
+57,Pigeon Guillemot,5,1.0,1.0,1.0,1.0
+58,California Gull,5,0.8,0.6666666666666666,0.8,0.7272727272727273
+59,Glaucous winged Gull,7,0.5714285714285714,0.6666666666666666,0.5714285714285714,0.6153846153846154
+60,Heermann Gull,5,1.0,0.8333333333333334,1.0,0.9090909090909091
+61,Herring Gull,5,0.6,0.75,0.6,0.6666666666666666
+62,Ivory Gull,4,1.0,1.0,1.0,1.0
+63,Ring billed Gull,5,0.6,0.6,0.6,0.6
+64,Slaty backed Gull,6,1.0,1.0,1.0,1.0
+65,Western Gull,6,0.8333333333333334,1.0,0.8333333333333334,0.9090909090909091
+66,Anna Hummingbird,5,0.8,0.8,0.8,0.8
+67,Ruby throated Hummingbird,5,0.8,0.8,0.8,0.8
+68,Rufous Hummingbird,7,1.0,1.0,1.0,1.0
+69,Green Violetear,6,1.0,1.0,1.0,1.0
+70,Long tailed Jaeger,6,1.0,1.0,1.0,1.0
+71,Pomarine Jaeger,6,1.0,1.0,1.0,1.0
+72,Blue Jay,7,1.0,1.0,1.0,1.0
+73,Florida Jay,7,1.0,1.0,1.0,1.0
+74,Green Jay,7,1.0,1.0,1.0,1.0
+75,Dark eyed Junco,5,1.0,1.0,1.0,1.0
+76,Tropical Kingbird,7,1.0,1.0,1.0,1.0
+77,Gray Kingbird,7,1.0,0.875,1.0,0.9333333333333333
+78,Belted Kingfisher,6,1.0,1.0,1.0,1.0
+79,Green Kingfisher,5,1.0,1.0,1.0,1.0
+80,Pied Kingfisher,7,1.0,1.0,1.0,1.0
+81,Ringed Kingfisher,7,1.0,1.0,1.0,1.0
+82,White breasted Kingfisher,7,1.0,1.0,1.0,1.0
+83,Red legged Kittiwake,4,1.0,1.0,1.0,1.0
+84,Horned Lark,6,1.0,1.0,1.0,1.0
+85,Pacific Loon,7,1.0,1.0,1.0,1.0
+86,Mallard,5,1.0,1.0,1.0,1.0
+87,Western Meadowlark,6,1.0,1.0,1.0,1.0
+88,Hooded Merganser,7,1.0,1.0,1.0,1.0
+89,Red breasted Merganser,6,1.0,1.0,1.0,1.0
+90,Mockingbird,6,1.0,1.0,1.0,1.0
+91,Nighthawk,6,1.0,1.0,1.0,1.0
+92,Clark Nutcracker,7,1.0,1.0,1.0,1.0
+93,White breasted Nuthatch,7,1.0,1.0,1.0,1.0
+94,Baltimore Oriole,5,1.0,0.8333333333333334,1.0,0.9090909090909091
+95,Hooded Oriole,7,0.8571428571428571,1.0,0.8571428571428571,0.9230769230769231
+96,Orchard Oriole,7,0.8571428571428571,1.0,0.8571428571428571,0.9230769230769231
+97,Scott Oriole,6,1.0,1.0,1.0,1.0
+98,Ovenbird,6,1.0,1.0,1.0,1.0
+99,Brown Pelican,6,1.0,1.0,1.0,1.0
+100,White Pelican,5,1.0,1.0,1.0,1.0
+101,Western Wood Pewee,7,0.7142857142857143,0.7142857142857143,0.7142857142857143,0.7142857142857143
+102,Sayornis,5,0.8,1.0,0.8,0.8888888888888888
+103,American Pipit,6,1.0,1.0,1.0,1.0
+104,Whip poor Will,4,0.75,0.75,0.75,0.75
+105,Horned Puffin,6,1.0,1.0,1.0,1.0
+106,Common Raven,5,0.6,0.75,0.6,0.6666666666666666
+107,White necked Raven,6,1.0,1.0,1.0,1.0
+108,American Redstart,6,1.0,1.0,1.0,1.0
+109,Geococcyx,5,1.0,1.0,1.0,1.0
+110,Loggerhead Shrike,7,1.0,0.875,1.0,0.9333333333333333
+111,Great Grey Shrike,6,0.8333333333333334,1.0,0.8333333333333334,0.9090909090909091
+112,Baird Sparrow,7,1.0,1.0,1.0,1.0
+113,Black throated Sparrow,7,1.0,1.0,1.0,1.0
+114,Brewer Sparrow,7,0.8571428571428571,0.75,0.8571428571428571,0.8
+115,Chipping Sparrow,6,0.8333333333333334,0.8333333333333334,0.8333333333333334,0.8333333333333334
+116,Clay colored Sparrow,7,0.8571428571428571,1.0,0.8571428571428571,0.9230769230769231
+117,House Sparrow,6,1.0,1.0,1.0,1.0
+118,Field Sparrow,6,0.8333333333333334,1.0,0.8333333333333334,0.9090909090909091
+119,Fox Sparrow,7,0.7142857142857143,1.0,0.7142857142857143,0.8333333333333334
+120,Grasshopper Sparrow,7,0.7142857142857143,1.0,0.7142857142857143,0.8333333333333334
+121,Harris Sparrow,5,1.0,1.0,1.0,1.0
+122,Henslow Sparrow,7,0.5714285714285714,1.0,0.5714285714285714,0.7272727272727273
+123,Le Conte Sparrow,7,1.0,1.0,1.0,1.0
+124,Lincoln Sparrow,7,1.0,1.0,1.0,1.0
+125,Nelson Sharp tailed Sparrow,6,1.0,1.0,1.0,1.0
+126,Savannah Sparrow,7,1.0,0.5833333333333334,1.0,0.7368421052631579
+127,Seaside Sparrow,5,1.0,0.8333333333333334,1.0,0.9090909090909091
+128,Song Sparrow,8,0.875,0.875,0.875,0.875
+129,Tree Sparrow,4,1.0,1.0,1.0,1.0
+130,Vesper Sparrow,8,1.0,0.8888888888888888,1.0,0.9411764705882353
+131,White crowned Sparrow,5,1.0,1.0,1.0,1.0
+132,White throated Sparrow,7,1.0,1.0,1.0,1.0
+133,Cape Glossy Starling,7,1.0,1.0,1.0,1.0
+134,Bank Swallow,5,0.8,1.0,0.8,0.8888888888888888
+135,Barn Swallow,5,1.0,0.8333333333333334,1.0,0.9090909090909091
+136,Cliff Swallow,6,1.0,1.0,1.0,1.0
+137,Tree Swallow,7,1.0,1.0,1.0,1.0
+138,Scarlet Tanager,5,1.0,1.0,1.0,1.0
+139,Summer Tanager,4,1.0,1.0,1.0,1.0
+140,Artic Tern,7,1.0,0.7777777777777778,1.0,0.875
+141,Black Tern,4,1.0,1.0,1.0,1.0
+142,Caspian Tern,8,1.0,1.0,1.0,1.0
+143,Common Tern,7,0.42857142857142855,0.75,0.42857142857142855,0.5454545454545454
+144,Elegant Tern,5,0.8,0.8,0.8,0.8
+145,Forsters Tern,5,1.0,0.8333333333333334,1.0,0.9090909090909091
+146,Least Tern,5,1.0,1.0,1.0,1.0
+147,Green tailed Towhee,7,1.0,1.0,1.0,1.0
+148,Brown Thrasher,6,1.0,1.0,1.0,1.0
+149,Sage Thrasher,5,1.0,1.0,1.0,1.0
+150,Black capped Vireo,5,1.0,1.0,1.0,1.0
+151,Blue headed Vireo,7,1.0,1.0,1.0,1.0
+152,Philadelphia Vireo,7,1.0,0.875,1.0,0.9333333333333333
+153,Red eyed Vireo,7,0.8571428571428571,1.0,0.8571428571428571,0.9230769230769231
+154,Warbling Vireo,7,1.0,1.0,1.0,1.0
+155,White eyed Vireo,7,1.0,1.0,1.0,1.0
+156,Yellow throated Vireo,6,1.0,1.0,1.0,1.0
+157,Bay breasted Warbler,6,1.0,1.0,1.0,1.0
+158,Black and white Warbler,7,0.8571428571428571,0.8571428571428571,0.8571428571428571,0.8571428571428571
+159,Black throated Blue Warbler,4,1.0,1.0,1.0,1.0
+160,Blue winged Warbler,7,1.0,1.0,1.0,1.0
+161,Canada Warbler,7,1.0,1.0,1.0,1.0
+162,Cape May Warbler,7,0.8571428571428571,0.75,0.8571428571428571,0.8
+163,Cerulean Warbler,5,1.0,0.8333333333333334,1.0,0.9090909090909091
+164,Chestnut sided Warbler,6,1.0,1.0,1.0,1.0
+165,Golden winged Warbler,7,1.0,1.0,1.0,1.0
+166,Hooded Warbler,5,1.0,1.0,1.0,1.0
+167,Kentucky Warbler,6,1.0,1.0,1.0,1.0
+168,Magnolia Warbler,5,1.0,1.0,1.0,1.0
+169,Mourning Warbler,7,0.8571428571428571,1.0,0.8571428571428571,0.9230769230769231
+170,Myrtle Warbler,4,1.0,0.8,1.0,0.8888888888888888
+171,Nashville Warbler,6,1.0,0.8571428571428571,1.0,0.9230769230769231
+172,Orange crowned Warbler,6,0.8333333333333334,1.0,0.8333333333333334,0.9090909090909091
+173,Palm Warbler,6,0.8333333333333334,1.0,0.8333333333333334,0.9090909090909091
+174,Pine Warbler,6,1.0,1.0,1.0,1.0
+175,Prairie Warbler,7,1.0,1.0,1.0,1.0
+176,Prothonotary Warbler,7,1.0,1.0,1.0,1.0
+177,Swainson Warbler,5,1.0,1.0,1.0,1.0
+178,Tennessee Warbler,6,0.8333333333333334,0.7142857142857143,0.8333333333333334,0.7692307692307693
+179,Wilson Warbler,7,1.0,1.0,1.0,1.0
+180,Worm eating Warbler,6,1.0,1.0,1.0,1.0
+181,Yellow Warbler,4,1.0,0.8,1.0,0.8888888888888888
+182,Northern Waterthrush,7,1.0,1.0,1.0,1.0
+183,Louisiana Waterthrush,6,1.0,1.0,1.0,1.0
+184,Bohemian Waxwing,7,1.0,1.0,1.0,1.0
+185,Cedar Waxwing,7,1.0,1.0,1.0,1.0
+186,American Three toed Woodpecker,6,1.0,1.0,1.0,1.0
+187,Pileated Woodpecker,8,1.0,1.0,1.0,1.0
+188,Red bellied Woodpecker,7,1.0,1.0,1.0,1.0
+189,Red cockaded Woodpecker,4,0.75,1.0,0.75,0.8571428571428571
+190,Red headed Woodpecker,6,1.0,1.0,1.0,1.0
+191,Downy Woodpecker,8,0.875,0.875,0.875,0.875
+192,Bewick Wren,7,0.8571428571428571,1.0,0.8571428571428571,0.9230769230769231
+193,Cactus Wren,5,1.0,1.0,1.0,1.0
+194,Carolina Wren,7,1.0,0.875,1.0,0.9333333333333333
+195,House Wren,5,1.0,1.0,1.0,1.0
+196,Marsh Wren,6,1.0,1.0,1.0,1.0
+197,Rock Wren,5,1.0,1.0,1.0,1.0
+198,Winter Wren,7,1.0,1.0,1.0,1.0
+199,Common Yellowthroat,5,1.0,1.0,1.0,1.0

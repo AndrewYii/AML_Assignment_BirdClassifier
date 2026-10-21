@@ -1,0 +1,6 @@
+base: e5_batch16.yaml
+exp_id: e8_uniform_low
+description: "Fine-tune strategy - one LR for everything at the backbone value (5e-5): no differential LR, head learns slowly"
+train:
+  strategy: uniform
+  lr: 5.0e-5

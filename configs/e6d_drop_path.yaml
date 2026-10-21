@@ -1,0 +1,5 @@
+base: e5_batch16.yaml
+exp_id: e6d_drop_path
+description: "Regularisation (alone) - stochastic depth (drop-path) 0.2: randomly skip residual blocks during training"
+model:
+  drop_path: 0.2

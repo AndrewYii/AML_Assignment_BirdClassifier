@@ -1,0 +1,6 @@
+base: e5_batch16.yaml
+exp_id: e9_data_25
+description: "Training-set size study - keep 25% of the training images of every class (stratified), same test set"
+save_ckpt: false
+data:
+  subset: {fraction: 0.25}

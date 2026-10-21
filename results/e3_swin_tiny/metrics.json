@@ -1,0 +1,23 @@
+{
+  "top1": 0.8338870431893688,
+  "mean_class_acc": 0.8287380952380953,
+  "top5": 0.9584717607973422,
+  "macro_precision": 0.8459437229437228,
+  "macro_recall": 0.8287380952380953,
+  "macro_f1": 0.8253655096193796,
+  "weighted_f1": 0.8301724712575926,
+  "n_test": 1204,
+  "exp_id": "e3_swin_tiny",
+  "model": "swin_tiny_patch4_window7_224.ms_in1k",
+  "img_size": 224,
+  "params_m": 27.673154,
+  "gflops": 4.489952256,
+  "latency_ms": 42.755866050720215,
+  "train_time_min": 17.234474968910217,
+  "epochs": 30,
+  "final_train_acc": 0.9937875336508594,
+  "final_train_loss": 0.027310723004055352,
+  "final_test_loss": 0.7101470232009888,
+  "train_test_gap": 0.15990049046149057,
+  "description": "Fair comparison - Swin-Tiny transformer (IN-1k, 28.3M) with the exact baseline recipe"
+}

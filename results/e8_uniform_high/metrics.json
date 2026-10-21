@@ -1,0 +1,23 @@
+{
+  "top1": 0.8355481727574751,
+  "mean_class_acc": 0.8308095238095238,
+  "top5": 0.957641196013289,
+  "macro_precision": 0.8424583333333334,
+  "macro_recall": 0.8308095238095238,
+  "macro_f1": 0.8275454961704962,
+  "weighted_f1": 0.8327437238786662,
+  "n_test": 1204,
+  "exp_id": "e8_uniform_high",
+  "model": "convnext_tiny.fb_in1k",
+  "img_size": 224,
+  "params_m": 27.973928,
+  "gflops": 4.454916864,
+  "latency_ms": 19.882047176361084,
+  "train_time_min": 21.109067765871682,
+  "epochs": 30,
+  "final_train_acc": 0.9954441913439636,
+  "final_train_loss": 0.01866059301812167,
+  "final_test_loss": 0.6798059940338135,
+  "train_test_gap": 0.1598960185864885,
+  "description": "Fine-tune strategy - one LR for everything at the head value (5e-4): no differential LR, backbone moves fast"
+}
