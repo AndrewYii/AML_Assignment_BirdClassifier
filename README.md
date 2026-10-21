@@ -1,7 +1,7 @@
 # COS30082 Assignment 1: Bird Species Classification (CUB-200)
 
 **Student:** Andrew Teck Foon Yii · COS30082 Applied Machine Learning
-**Web app (Hugging Face Space):** https://huggingface.co/spaces/AndrewYii/Ass1_Bird_Classifier
+**Web app (Hugging Face Space):** [https://huggingface.co/spaces/AndrewYii/Ass1_Bird_Classifier](https://huggingface.co/spaces/AndrewYii/AML-Ass1)
 
 Transfer learning on the Caltech-UCSD Birds 200 dataset: 200 bird species, 4,829 training and 1,204 test images
 (about 24 training images per species). The project moves from a classic CNN baseline (ResNet-50) to a modern CNN
